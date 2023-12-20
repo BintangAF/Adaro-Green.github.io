@@ -1,0 +1,1529 @@
+*,body,html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scrollbar-color: gray #6E8C2D;
+    scrollbar-width: thin;        
+}
+body {
+    position: relative;
+}
+/* Navigation */
+.nav-container {
+    width: 100%;
+    display: flex;
+    overflow: hidden;    
+}
+.nav-wrapper {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #587223;
+}
+.nav-logo {
+    color: white;
+    margin-left: 25px;
+}
+.nav-logo img {
+    width: 80px;
+    height: 80px;
+}
+.nav-menu {
+    justify-content: center;
+    align-items: center;    
+    margin-right: 40px;    
+}
+.nav-menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 28px; */
+    font-family: 'Antic';
+}
+.nav-menu li {
+    list-style-type: none;
+    margin-left: 25px;
+    transition: 0.25s;
+    border-radius: 5px;
+}
+.nav-menu li:hover, 
+.nav-menu li:focus {
+    background-color: #E7DC67;
+    box-shadow: 0 0.5em 0.5em -0.4em #d8dbd1;
+    transform: translateY(-0.25em);
+}
+.nav-menu li:hover a, 
+.nav-menu li:focus a {
+    color: black !important;
+}
+.nav-menu li a{
+    /* transition: 0.25s; */
+    border-radius: 7px;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+    color: white;
+    font-size: 1.5em;
+    /* font-size: 25px; */
+    padding: 7px;
+}
+.dropdown-menu {    
+    display: none;
+    position: absolute;
+    width: 15em;
+    height: 0;
+    right: 0.3em;
+    top: 4.5em;
+    background-color: #6e8c2da1;
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 1;
+}
+.dropdown-menu.open {
+    height: 150px;
+}
+.dropdown-menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.dropdown-menu ul li {
+    list-style-type: none;    
+    display: flex;
+    justify-content: center;    
+    transition: background-color .2s ease;
+}
+.dropdown-menu li:hover {
+    background-color: #6E8C2D;
+}
+.dropdown-menu li a {
+    width: 100%; 
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    padding: 1em 0;
+    /* padding: 0.5em 2em; */
+    border-radius: 5px;
+    transition: background-color 0.1s ease;
+    font-family: 'Kufam';
+}
+.toggle-menu-btn {
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.toggle-menu-btn,
+.dropdown-menu {
+    display: none;
+}
+/* / Navigation */
+
+ /* Content 1 */
+.fcontent {
+    position: relative;
+}
+.content1-container {
+    width: 100%;
+}
+.content1-wrapper {
+    /* width: 100%; */    
+    height: 100vh;
+    background-image: url(Pemandangan\ panel\ surya.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-size: 100% 100%; */
+    background-position: center;
+    background-attachment: fixed;
+    /* z-index: 1; */
+}
+
+.ctn1-item {
+    min-height: 100vh;
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(1fr,2fr)); */
+    grid-template-columns: 2fr 1fr;
+    /* grid-template-rows: 650px; */
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.ctn1-item-deskripsi {
+    width: 85%;
+    /* height: auto; */
+    /* margin-left: 60px; */
+    /* background-color: transparent; */
+    background-color: #e7dc67a8;
+    /* border-radius: 20px; */
+    padding: 3em 0em 3em 2em;
+
+}
+.ctn1-item-deskripsi h1 {
+    /* color: #E7DC67; */
+    width: 87%;
+    color: #587223;
+    font-weight:bolder;
+    font-size: 3.2em;
+    /* font-size: 48px; */
+    margin-bottom: 20px;
+    font-family: 'Bayon';
+    line-height: 1.2em;
+}
+.ctn1-item-deskripsi p {
+    /* color: white; */
+    color: black;
+    font-size: 1.4em;
+    font-family: 'Kufam', sans-serif;
+    padding-right: 6em;
+}
+.ctn1-item-gambar {
+    align-self: end;
+    /* align-self: center; */
+    justify-self: end;
+    /* justify-self: center; */
+}
+.ctn1-item-gambar img {
+    width: 39vw;    
+    /* width: 500px;     */
+    height: 100%;
+    position: relative;
+    bottom: -1.5em;
+}
+
+/* / Content 1 */
+
+/* Content 2 */
+.content2-container {
+    width: 100%;
+}
+.content2-wrapper {
+    width: 100%;
+    height: min-content;
+    background-color: #6E8C2D;
+    /* z-index: 1000; */
+}
+.content2-item {
+    /* width: 100%; */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content min-content min-content min-content;    
+    justify-content: center;
+}
+.ctn2-item-title  {    
+    justify-self: center;
+}
+.ctn2-item-title h1 {
+    padding-top: 5px;
+    color: #f4f4f4;
+    font-family: 'Bayon';
+    font-size: 3em;
+}
+
+.ctn2-item-dproduk-wrapper {
+    display: grid;
+    grid-template-columns: 0.5fr 0.45fr;
+    grid-template-rows: 400px;
+}
+.ctn2-image {    
+    justify-self: center;
+}
+.ctn2-image img {
+    width: 30vw;
+    height: 100%;
+}
+.ctn2-description {
+    display: grid;
+    grid-template-columns: 0.45fr 0.45fr;
+    grid-template-rows:  min-content;    
+    align-content: center;    
+    align-items: center;
+    text-align: center;
+}
+.ctn2-item-description {
+    display: grid;
+}
+.ctn2-description-item {
+    position: relative;
+}
+.ctn2-description-item .ctn2-description-title {
+    font-size: 2.7em;
+    font-family: 'Bayon', sans-serif;    
+    color: white;
+}
+.ctn2-description-item .ctn2-description-subtitle {
+    font-size: 1.25em;
+    font-family: 'Arimo', sans-serif;
+    color: #ccc;
+    position: relative;
+    top: -1em;
+}
+.ctn2-item-kelebihan-produk {
+    margin-left: 120px;
+}
+.ctn2-kproduk-title {
+    margin-bottom: 10px;        
+}
+.ctn2-kproduk-title h2 {
+    font-family: 'Bayon';    
+    font-size: 2.25em;
+    color: white;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+.ctn2-kproduk-list  {
+    margin-left: 10px;
+    font-size: 24px;
+    color: white;
+}
+.ctn2-kproduk-list li {
+    margin-bottom: 5px;
+}
+.ctn2-kproduk-list p {
+    color: #fff;
+    margin-left: 8px;
+    font-size: 20px;
+    font-family:'ABeeZee', sans-serif;
+}
+.ctn2-grafik {
+    display: grid;
+    grid-template-columns: 1fr 0.9fr;
+    grid-template-rows: min-content;
+    padding-top: 60px;
+}
+.ctn2-gambar-grafik {
+    /* grid-area: 1 / 1 / 2 / 2; */
+    justify-self: end;
+}
+.ctn2-gambar-grafik img {
+    width: 45vw;
+    height: auto;
+    /* width: 600px;
+    height: 300px; */
+}
+
+
+.ctn2-grafik-deskripsi {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,min-content);
+    row-gap: 40px;
+}
+
+.ctn2-grafik-title-desc {
+    color: #eee;
+    font-family: 'Kufam', sans-serif;
+    font-size: 1.25em;
+    /* font-size: 20px; */
+}
+.ctn2-grafik-bar {
+    background-color: #F5EA29;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
+    height: 50px;    
+    width: 0;
+}
+.ctn2-grafik-bar p {
+    font-family: 'Actor', sans-serif;
+    font-size: 1.25em;
+}
+.animasi-grafik-bar1 {
+    animation: stretchBackground1 4s forwards;
+    /* width: 74%;     */
+}
+.animasi-grafik-bar2 {
+    animation: stretchBackground2 4s forwards;
+    /* width:  57%;     */
+}
+@keyframes stretchBackground1 {
+    to {
+        width: 74%;
+    }
+}
+@keyframes stretchBackground2 {
+    to {
+        width: 57%;
+    }
+}
+   
+.ctn2-grafikbar-deskripsi {
+    color: #eee;
+    font-size: 1.25em;
+    padding-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    font-family: 'Kufam', sans-serif;
+}
+
+    /* / Content 2 */
+
+    /* Content 3 */
+.content3-container {
+    width: 100%;
+}
+.content3-wrapper {
+    width: 100%;
+    height: auto;
+    background-color: #587223;
+}
+.ctn3-item {
+    min-height: 90vh;
+    /* height: 100vh; */
+    /* max-height: 100vh; */
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    /* grid-template-rows: auto; */
+    /* justify-content: center; */
+    
+}
+.ctn3-company-image {
+    /* grid-area: 1 / 1 / 2 / 2; */
+    place-self: center end;
+}
+.ctn3-company-image img {
+    width: 32vw;
+    height: auto;
+    /* width: 430px;
+    height: 430px;     */
+}
+ 
+.ctn3-company-description {    
+    place-self: center start;
+}
+.ctn3-company-description {
+    margin-left: 28px;        
+}
+.ctn3-title {
+    font-size: 2.5em;
+    font-family: 'Candal', sans-serif;
+    color: white;
+    margin-bottom: 15px;
+}
+.ctn3-company-description p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-family: 'Kufam', sans-serif;
+    color: #eee;
+    padding-right: 40px;
+}
+    /* / Content 3 */
+
+    /* Content 4 */    
+.content4-container {
+    width: 100%;
+}
+.content4-wrapper {
+    width: 100%;
+    /* height: 180vh; */
+    background-color: #6E8C2D;
+    padding-bottom: 7em;
+}
+.ctn4-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px min-content;
+    row-gap: 5em;
+    justify-items: center;    
+}
+.ctn4-item-title {    
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    font-family: "Bayon";
+    font-size: 3em;
+}
+
+.ctn4-item-promotions {
+    display: grid;
+    width: 80%;
+    grid-template-columns: 1fr 1fr 1fr;    
+    grid-template-rows: repeat(2,min-content);
+    justify-self: center;
+    justify-items: center;
+    align-items: center;
+    column-gap: 5px;    
+    row-gap: 3em;
+}
+.ctn4-package-promotion {
+    place-items: center;
+    /* justify-items: center;
+    align-items: center; */
+    position: relative;
+    width: 80%;
+    height: 100%;
+}
+.ctn4-slider-container {    
+    width: 320px;
+    /* width: 300px; */
+    height: auto;
+    padding: 2em 1em;
+    /* background-color: red; */
+}
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 230px;
+    height: 330px; 
+}
+.ctn4-package-promotion img,
+.ctn4-slide img {
+    /* min-width: 300px; */
+    width: 100%;
+    height: 100%;    
+}
+.swiper-pagination-bullet-active {
+    background: white;
+}
+.swiper-button-prev,
+.swiper-button-next {
+    color: white;
+}
+.ctn4-package-button {
+    cursor: pointer;
+    background-color: #E7DC67;    
+    width: 7.5em;
+    height: 1.3em;    
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'Actor';
+    font-size: 1.2em;
+    transition: scale 0.2s ease;
+}
+.ctn4-package-button a{
+    text-decoration: none;
+    color: black;
+}
+.ctn4-package-button:hover  {
+    scale: 1.05;
+}
+.ctn4-package-button:active  {
+    scale: 1;
+}
+.ctn4-item-promotions-swiper-display  {
+    display: none;
+    background-color: #516d15;
+    border-radius: 20px;
+}
+    /* / Content 4 */
+
+    /* Content 5 */
+.content5-container {
+    width: 100%;    
+    /* min-height: 40vh; */
+    height: 27em;
+    /* max-height: 100vh; */
+    /* border: 1px solid red; */
+    background: rgb(231,220,103);
+    background: linear-gradient(0deg, rgba(231,220,103,1) 0%, rgba(110,140,45,1) 100%); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3em;
+}
+.content5-wrapper {
+    width: 80%;
+    height: 80%;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ctn5-testimoni {
+    width: 70%;
+    height: 100%;
+    /* border: 1px solid black; */
+    position: relative;
+}
+.ctn5-testimoni-image-profile {
+    /* max-width: 100%; */
+    display: flex;
+    justify-content: center;    
+    
+}
+.ctn5-testimoni-image-profile-circle-border {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background-color: #6E8C2D;
+    border-radius: 50%;
+    width: 30%;
+    max-height: 100%;
+    z-index: 2;
+}
+.ctn5-testimoni-image-profile img {
+    width: 70%;    
+    height: 95%;
+    border-radius: 30%;
+    z-index: 2;
+    /* object-fit: cover; */
+}
+.ctn5-testimoni-comment {
+    width: 90%;
+    margin: 0 auto;
+    max-height: 100%;
+    /* height: 90%; */
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content min-content;
+    /* grid-template-rows: 40px 120px; */
+    padding: 7px 20px 20px 7px;
+    border-radius: 20px;
+    position: relative;
+    top: -45px;    
+    z-index: 1;
+}
+.ctn5-testimoni-comment-icon {
+    margin-left: 2.4em;
+}
+.ctn5-testimoni-comment-icon i {
+    color: #F5EA29;
+    font-size: 1.2em;
+}
+.ctn5-testimoni-comment-text {
+    margin-top: 1em;
+}
+.ctn5-testimoni-comment-text h3 {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-family: 'Antic';
+    font-weight: bolder;
+    font-size: 1.25em;
+}
+.ctn5-testimoni-comment-text p {
+    margin-left: 5px;
+    font-family: 'Antic';
+    font-size: 1.1em;
+}
+.ctn5-testimoni-comment-edge-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 18px;
+    background-color: #6E8C2D;
+    font-family: 'Antic';
+    position: absolute;
+}
+.ctn5-testimoni-comment-edge-box p {
+    position: relative;
+}
+.comment-edge-top {    
+    font-size: 8em;
+    /* width: 8.5vw;
+    height: 7.5vh; */
+    width: 0.65em;
+    height: 0.45em;
+    /* width: 80px;
+    height: 60px; */
+    top: -22px;
+    left: -43px;
+}
+.comment-edge-top p {
+    top: -48px;
+    /* left: 0; */
+}
+.comment-edge-down {
+    font-size: 8.1em;
+    transform: rotate(180deg);
+    width: 0.8em;
+    height: 0.55em;
+    /* width: 100px;
+    height: 70px; */
+    right: -40px;
+    bottom: -35px;
+}
+.comment-edge-down p {
+    bottom: 48px;
+}
+
+    /* / Content 5 */
+
+    /* Content 6 */
+.ctn6-container {
+    width: 100%;    
+    font-family: 'Kufam';
+}
+.ctn6-wrapper {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    width: 100%;
+    height: auto;
+    /* height: 53em; */
+    background-color: #E7DC67;
+}
+.ctn6-konsultasi {
+    width: 70%;
+    height: auto;
+    /* height: 50em; */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7,min-content);
+    gap: 20px;
+    margin-top: 3em;
+}
+.ctn6-konsultasi-judul {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    padding-bottom: 3em; 
+}
+.ctn6-konsultasi-judul p {
+    color: #6E8C2D;
+    font-family: 'Bayon';
+    font-size: 3em;
+}
+.ctn6-konsultasi-input p {
+    font-size: 0.9em;
+    padding: 10px 0px;
+}
+.ctn6-konsultasi-input input {
+    width: 100%;
+    height: 2.9em;
+    /* height: 35px; */
+    font-size: 0.9em;
+    border: 1px solid black;
+    padding-left: 0.6em;
+}
+.ctn6-konsultasi-radio-input {
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+.ctn6-konsultasi-radio-input p {
+    font-size: 0.9em;
+    padding-bottom: 20px;    
+}
+.ctn6-radio-input label {
+    margin-left: 10px;
+    font-size: 0.85em;
+    cursor: pointer;
+}
+.ctn6-konsultasi-button {
+    padding-bottom: 2em;
+}
+.ctn6-konsultasi-button button {
+    width: 5.6em;
+    height: 1.9em;
+    /* width: 90px;
+    height: 30px; */
+    color: white;
+    font-size: 17px;
+    letter-spacing: 1px;
+    background-color: #6E8C2D;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Actor';
+}
+    /* / Content 6 */
+
+    /* Footer */
+.footer {
+    width: 100%;
+}
+.footer-wrapper {
+    width: inherit;
+    /* height: 640px; */
+    background-color: #6E8C2D;
+}
+.footer-ctn {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content 60px;
+}
+.footer-ctn-address {    
+    /* padding-top: 10px; */
+    width: 100%;
+    display: grid;    
+    grid-template-columns: repeat(auto-fill,minmax(100px,19em));    
+    /* grid-template-rows: 180px; */
+    /* align-items: center; */
+    justify-content: center;
+}
+.footer-address {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content min-content;
+    padding: 2em 2em;
+    /* padding: 1.2em 3.75em; */
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+.footer-address-city {
+    font-size: 2.1em;    
+    font-family: 'Bayon';
+}
+.footer-address-street {
+    font-size: 0.9em;
+    color: #eee;
+    font-family: 'Kufam', sans-serif;
+}
+/* .footer-ctn-socialmedia {
+    display: flex;
+    justify-content: end;
+} */
+/* .footer-icon {
+    padding-right: 10em;
+    padding-bottom: 2.1em;
+} */
+.footer-icon .ig-icon {
+    width: 2em;
+    height: auto;
+}
+/* .footer-icon .wa-icon {
+    width: 70px;
+    height: 70px;
+} */
+.footer-copyrights {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #587223;
+    padding: 1.5em;
+}
+.footer-copyrights p {
+    /* color: #fefefe; */
+    font-size: 1em;
+    font-family: 'Kufam';
+    color: #eee;
+    margin-right: 20px;
+}
+ /* / Footer */
+
+/* Float Content */
+
+.float-content {
+    position: fixed;    
+    bottom: 3.5em;
+    right: 3em;
+}
+.float-content .arrow-display {
+    display: none;    
+    animation: BounceIn 1s;        
+    transition: all 1s ease-in-out;
+}
+@keyframes BounceIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-25px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+.float-content .arrow-btn {
+    display: flex;
+    justify-content: end;
+    transform: 1s;
+}
+.float-content .arrow-btn:hover a,
+.float-content .arrow-btn:focus a{    
+    color: black;
+}
+
+.float-content .arrow-btn a {    
+    font-size: 1.3em;
+    background-color: #E7DC67;    
+    color: white;
+    text-decoration: none;
+    /* border: 1px solid black; */
+    padding: 0.4em 0.6em;
+    border-radius: 30px;
+}
+.float-content .icon {
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    transition: all 0.2s ease;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    border-radius: 35px;
+    cursor: pointer;
+}
+.float-content .icon img {
+    width: 40px;
+    height: auto;
+}
+.float-content .icon span {
+    font-family: 'ABeeZee';
+    width: 0px;
+	overflow: hidden;
+	transition: 1s;
+	text-align: center;
+}
+.float-content .icon span a {        	
+	color: black;
+    text-decoration: none;	
+}
+.float-content .icon:hover  {
+    width: 100px;
+}
+.float-content .icon:hover span {
+    padding: 2px;
+	width: max-content;
+}
+
+
+/* / Float Content */
+
+
+/* Animasi Reveal Scroll */
+
+/* .reveal {
+    position: relative;
+    transform: translateY(150px); 
+    opacity: 0;
+    transition: all 1s ease;
+}
+.reveal.delay {    
+    transform: translateY(180px);     
+}
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+} */
+
+/* / Animasi Reveal Scroll */
+
+/* Animasi Reveal biasa atau auto */
+
+.reveal-auto {
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: revealAnimation 1.5s forwards;
+}
+@keyframes revealAnimation {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.scale-img {
+    opacity: 0;
+    transform: scale(0.5);
+    animation: fadeAndScale 1.5s forwards;
+}
+@keyframes fadeAndScale {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+
+/* Animasi Reveal biasa atau auto */
+ 
+/* Responsive Breakpoints */
+
+@media screen and (max-width: 1024px) {
+    .content1-wrapper {
+        height: auto;
+        /* height: 90vh; */
+    }
+    .ctn1-item {
+        min-height: 60vh;        
+        padding: 50px 0;
+    }
+    .ctn1-item-deskripsi {
+        width: 75%;             
+        padding: 2em 2em 2em 2em;
+        /* justify-self: start; */
+    }
+    .ctn1-item-deskripsi h1 {
+        font-size: 3em;
+    }
+    .ctn1-item-deskripsi p {
+        padding-right: 0.9em;
+        font-size: 1.1em;
+    }
+    /* .ctn1-item-gambar {        
+        align-self: end;
+        justify-self: end;
+    } */    
+    .ctn2-item-title h1 {
+        font-size: 2.5em;
+    }
+    .ctn2-item-dproduk-wrapper {
+        grid-template-rows: 300px;
+    }
+    .ctn2-image img {
+        width: 30vw;        
+        height: 100%;
+    }
+    .ctn2-description-item .ctn2-description-title {
+        font-size: 2.5em;
+    }
+    .ctn2-description-item .ctn2-description-subtitle {
+        font-size: 1.2em;
+    }
+    .ctn2-item-kelebihan-produk {
+        margin-left: 100px;
+    }
+    .ctn2-kproduk-title h2 {
+        font-size: 1.9em;
+    }
+    .ctn2-kproduk-list {
+        font-size: 1em;
+    }
+    .ctn2-kproduk-list p {
+        font-size: 1.2em;
+    }   
+    .ctn2-gambar-grafik img {
+        width: 45vw;
+        height: auto;
+    }
+    .ctn2-grafik-deskripsi {       
+        row-gap: 20px;
+    }   
+    .ctn2-grafik-title-desc {
+        font-size: 1em;
+    }
+    .ctn2-grafik-bar {    
+        height: 35px;
+    }
+    .ctn2-grafik-bar p {
+        font-size: 1em;
+    }
+    .ctn2-grafikbar-deskripsi {
+        font-size: 1em;
+    }
+    .ctn3-item {        
+        min-height: 50vh;
+        display: grid;
+        grid-template-columns: 0.8fr 1fr;
+        /* grid-template-rows: auto; */
+        padding: 40px 0;
+    }
+    .ctn3-company-image img {
+        width: 35vw;
+    }
+    .ctn3-title {
+        font-size: 2.2em;        
+    }
+    .ctn3-company-description p {       
+        font-size: 1em;       
+    }
+    .ctn4-item-title {    
+        font-size: 2.5em;
+    }
+    .ctn4-item-promotions {    
+        grid-template-columns: 1fr 1fr;    
+        row-gap: 2.5em;
+    }
+    .ctn4-package-promotion {    
+        width: 70%;
+        height: 100%;
+    }
+    .ctn4-package-promotion img {
+        width: 100%;
+        height: 100%;
+    }
+    .content5-container {    
+        height: auto;
+    }
+    .ctn5-testimoni {
+        width: 80%;        
+    }
+    .ctn5-testimoni-comment {
+        width: 90%;       
+    }
+    .ctn5-testimoni-image-profile-circle-border {
+        width: 25%;
+    }
+    .ctn5-testimoni-comment-icon i {
+        font-size: 1em;
+    }
+    .ctn5-testimoni-comment-text h3 {    
+        font-size: 1em;
+    }
+    .ctn5-testimoni-comment-text p {    
+        font-size: 0.99em;
+    }
+    .comment-edge-top {    
+        font-size: 8em;    
+        width: 0.60em;
+        height: 0.44em;
+        top: -22px;
+        left: -43px;
+    }
+    .comment-edge-down {
+        font-size: 8.1em;        
+        width: 0.75em;
+        height: 0.53em;       
+        right: -40px;
+        bottom: -35px;
+    }
+    .ctn6-konsultasi-judul p {        
+        font-size: 2.5em;
+    }
+    .ctn6-konsultasi-button button {
+        width: 5.3em;
+        height: 1.8em;
+        font-size: 1em;        
+    }
+    .footer-ctn-address {   
+        grid-template-columns: repeat(auto-fill,minmax(100px,18em));
+        justify-content: center;
+    }
+    .footer-address {     
+        padding: 1.5em 2em;        
+    }
+    .footer-address-city {
+        font-size: 1.8em;
+    }
+    .footer-address-street {
+        font-size: 0.8em;
+    }
+    .footer-copyrights p {
+        font-size: 0.9em;
+    }
+    /* .footer-icon .ig-icon {
+        width: 2em;
+    } */
+    .float-content {
+        right: 2em;
+    }
+}
+
+@media (max-width: 768px)  {
+    .nav-menu {
+        display: none;
+    }    
+    .toggle-menu-btn {
+        display: block;
+        margin-right: 0.6em
+    }
+    .dropdown-menu {
+        display: block;
+    }
+    .ctn1-item {
+        /* height: 80vh; */
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+        padding: 20px 0;
+    }
+    .ctn1-item-deskripsi {
+        margin-top: 2em;
+        border-radius: 10px;
+    }
+    .ctn1-item-deskripsi h1 {
+        font-size: 2.5em;
+    }
+    .ctn2-item-title h1 {
+        font-size: 2.2em;
+    }
+    .ctn1-item-gambar {        
+        align-self: start;
+        justify-self: center;
+    }
+    .ctn1-item-gambar img {
+        width: 50vw;       
+        bottom: inherit;
+    }
+    .ctn2-item-dproduk-wrapper {
+        grid-template-columns: 1.2fr 1fr;
+    }
+    .ctn2-image img {
+        width: 38vw;
+    }
+    .ctn2-description {
+        grid-template-columns: 0.4fr 0.5fr;
+    }
+    .ctn2-description-item .ctn2-description-title {
+        font-size: 2em;
+    }
+    .ctn2-description-item .ctn2-description-subtitle {
+        font-size: 0.9em;
+    }
+    .ctn2-item-kelebihan-produk {
+        margin-left: 3em;
+    }
+    .ctn2-kproduk-title h2 {
+        font-size: 1.7em;
+    }
+    .ctn2-kproduk-list p {
+        font-size: 1em;
+    }
+    .ctn2-grafik {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content min-content;
+        row-gap: 20px;
+    }
+    .ctn2-gambar-grafik {     
+        justify-self: center;
+    }
+    .ctn2-gambar-grafik img {
+        width: 70vw;
+        height: auto; 
+    }
+    .ctn2-grafik-deskripsi {
+        width: 80%;
+        justify-self: center;
+        align-self: center;
+        row-gap: 20px;
+    }
+    .ctn2-grafik-title-desc {
+        font-size: 1em;
+    }
+    @keyframes stretchBackground1 {
+        to {
+            width: 94%;
+        }
+    }
+    @keyframes stretchBackground2 {
+        to {
+            width: 77%;
+        }
+    }
+    .ctn2-grafik-bar {    
+        height: 30px;
+    }
+    .ctn2-grafik-bar p {     
+        font-size: 0.9em;
+    }
+    .ctn2-grafik-bar1 {
+        width: 97%;     
+    }
+    .ctn2-grafik-bar2 {
+        width:  80%;         
+    }
+    .ctn2-grafikbar-deskripsi {
+        font-size: 1em;        
+        padding-right: 0px;
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+    .ctn3-item {
+        min-height: 35vh;
+    }
+    .ctn3-company-image img {
+        width: 36vw;
+    }
+    .ctn3-title {
+        font-size: 1.9em;
+    }
+    .ctn3-company-description p {
+        font-size: 1em;
+    }
+    .ctn4-item-title {
+        font-size: 2.2em;
+    }
+    .ctn4-item-promotions {
+        width: 100%;
+    }
+    .ctn4-package-button {
+        width: 7em;
+        font-size: 1.1em;
+    }
+    .content5-wrapper {
+        width: 90%;
+    }
+    .ctn5-testimoni-comment {
+        width: 90%;
+    }
+    .ctn5-testimoni-comment-icon {
+        margin-left: 2em;
+    }
+    .ctn5-testimoni-comment-icon i {
+        font-size: 1em;
+    }
+    .ctn5-testimoni-comment-text h3 {
+        font-size: 1em;
+    }
+    .ctn5-testimoni-comment-text p {
+        font-size: 0.9em;
+    }
+    .comment-edge-top {
+        width: 0.56em;
+        height: 0.40em;
+        top: -20px;
+        left: -39px;
+    }
+    .comment-edge-down {
+        width: 0.7em;
+        height: 0.47em;
+        right: -34px;
+        bottom: -30px;
+    }
+    .ctn6-konsultasi {
+        width: 75%;
+    }
+    .ctn6-konsultasi-judul {
+        padding-bottom: 2em;
+    }
+    .ctn6-konsultasi-judul p {
+        font-size: 2.1em;
+        text-align: center;
+        line-height: 1em;
+    }
+    .ctn6-konsultasi-input input {
+        height: 2.5em;
+    }
+    .footer-ctn-address {        
+        grid-template-columns: repeat(auto-fill,minmax(100px,16.5em));        
+    }
+}
+@media screen and (max-width: 500px) {
+    .nav-logo {
+        margin-left: 0;
+    }
+    .nav-logo img {
+        width: 60px;
+        height: 60px;
+    }
+    .dropdown-menu {
+        width: unset;
+        left: 0.3em;
+    }
+    .ctn1-item {
+        min-height: 50vh;            
+        padding: 0 0;
+    }
+    .ctn1-item-deskripsi {
+        width: 85%;
+        padding: 1em 0em 1em 1em;        
+        /* background-color: transparent; */
+    }
+    .ctn1-item-deskripsi h1 {    
+        font-size: 2em;    
+        line-height: 1.2em;
+        margin-bottom: 10px;
+    }
+    .ctn1-item-deskripsi p {
+        font-size: 0.9em;
+    }
+    .ctn1-item-gambar {
+        align-self: start;
+    }
+    .ctn1-item-gambar img {
+        width: 70vw;
+    }
+    .ctn2-item-title h1 {
+        font-size: 1.8em;
+    }    
+    .ctn2-item-dproduk-wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content;
+    }
+    .ctn2-image img {
+        width: 35vw;
+    }
+    .ctn2-description {
+        margin-top: 1em;
+        justify-content: center;
+        grid-template-columns: 0.5fr 0.5fr;
+    }
+    .ctn2-description-item .ctn2-description-title {
+        font-size: 2.5em;
+    }
+    
+    .ctn2-item-kelebihan-produk {
+        margin-top: 2em;
+        margin-left: 0;        
+        width: 80%;
+        justify-self: center;
+    }
+    .ctn2-kproduk-title h2 {
+        font-size: 1.5em;
+        line-height: 1em;
+    }
+    .ctn2-kproduk-list p {
+        font-size: 1em;
+    }
+    .ctn2-grafik {
+        justify-content: center;
+        justify-items: center;
+    }
+    .ctn2-gambar-grafik {
+        width: 80%;
+    }
+    .ctn2-gambar-grafik img {
+        width: 100%;
+    }
+    .ctn2-grafik-deskripsi {
+        width: 80%;     
+    }
+    .ctn2-grafikbar-deskripsi {
+        font-size: 0.8em;
+    }
+    @keyframes stretchBackground1 {
+        to {
+            width: 97%;
+        }
+    }
+    @keyframes stretchBackground2 {
+        to {
+            width: 80%;
+        }
+    }
+    .ctn3-item {
+        grid-template-columns: 1fr;
+        height: min-content;        
+        /* height: 100vh;         */
+        justify-items: center;
+        padding: 0 0;
+    }
+    .ctn3-company-image {
+        place-self: start center;    
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .ctn3-company-image img {
+        width: 100%;
+    }
+    .ctn3-company-description {
+        place-self: start center;
+        margin: 1.5em 0;        
+        padding: 0 2em;
+    }
+    .ctn3-title {
+        font-size: 1.6em;
+    }
+    .ctn3-company-description p {
+        font-size: 0.8em;
+        padding: 0;
+    }
+    .ctn4-utama {
+        display: none;
+    }
+    .ctn4-item {
+        row-gap: 1.5em;
+    }
+    .ctn4-item-promotions-swiper-display {
+        display: block; 
+    }
+    .ctn4-item-promotions {    
+        row-gap: 0;
+    }
+    
+    .content5-wrapper {
+        width: 90%;
+    }
+    .ctn5-testimoni {
+        width: 90%;
+    }
+    .ctn5-testimoni-image-profile-circle-border {
+        width: 28%;
+    }
+    .ctn5-testimoni-comment {
+        padding: 0px 10px 15px 7px;
+        top: -25px;
+    }
+    .ctn5-testimoni-comment-icon {
+        margin-left: 1.5em;
+    }
+    .ctn5-testimoni-comment-icon i {
+        font-size: 0.65em;
+    }
+    .ctn5-testimoni-comment-text {
+        margin-top: 0.8em;
+    }
+    .ctn5-testimoni-comment-text h3 {
+        font-size: 0.9em;
+        margin-bottom: 8px;
+    }
+    .ctn5-testimoni-comment-text p {
+        font-size: 0.9em;
+    }
+    .comment-edge-top {
+        width: 0.5em;
+        height: 0.4em;
+        top: -15px;
+        left: -30px; 
+        font-size: 7em;
+    }
+    .comment-edge-top p {
+        top: -40px;
+    }
+
+    .comment-edge-down {
+        width: 0.6em;
+        height: 0.4em;
+        right: -30px;
+        bottom: -26px;
+        font-size: 7.5em;
+    }
+    .comment-edge-down p {
+        top: -45px;
+    }    
+    .ctn6-konsultasi-input p {
+        font-size: 0.8em;
+    }
+    .ctn6-konsultasi-input input {
+        height: 2em;
+    }
+    .ctn6-radio-input label {
+        font-size: 0.75em;
+    }
+    .footer-ctn-address {
+        width: 100%;
+        grid-template-columns: 1fr;
+        /* padding: 0 2em; */
+    }
+    .footer-address {
+        padding: 1em;
+    }
+    .footer-address-city {
+        font-size: 1.5em;
+    }
+    /* .footer-icon {
+        padding-right: 7em;
+        padding-bottom: 1em;
+    } */
+    .footer-icon .ig-icon {        
+        width: 1.9em;
+    }
+    .footer-copyrights p {
+        font-size: 0.65em;
+    }
+    .float-content {
+        right: 1em;
+        bottom: 3em;
+    }
+    .float-content .arrow-btn a {    
+        font-size: 1em;
+        color: black;        
+        padding: 0.4em 0.6em;
+        border-radius: 30px;
+    }
+    .float-content .icon {
+        width: 40px;
+        height: 40px;
+    }
+    .float-content .icon img {
+        width: 30px;
+    }
+    .float-content .icon:hover,
+    .float-content .icon:active  {
+        width: 100px;
+    }
+}
