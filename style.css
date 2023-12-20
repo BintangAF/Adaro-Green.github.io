@@ -894,7 +894,7 @@ body {
 
 /* Animasi Reveal Scroll */
 
-/* .reveal {
+.reveal {
     position: relative;
     transform: translateY(150px); 
     opacity: 0;
@@ -906,7 +906,7 @@ body {
 .reveal.active {
     transform: translateY(0px);
     opacity: 1;
-} */
+}
 
 /* / Animasi Reveal Scroll */
 
