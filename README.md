@@ -1,4 +1,4 @@
-#It is for school assignment
+# It is for school assignment
 
 Created by:\
 [Ranggaalfaris](https://github.com/Ranggaalfaris) (Designer)\
