@@ -1,8 +1,8 @@
-It is for school assignment
+#It is for school assignment
 
-Created by:
-Rangga (Designer)
-BintangAF (Front end Dev)
+Created by:\
+[Ranggaalfaris](https://github.com/Ranggaalfaris) (Designer)\
+BintangAF (Front end Dev)      
 
-You can see the result here:
+You can see the result here:\
 https://bintangaf.github.io/Adaro-Green.github.io/
